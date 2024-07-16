@@ -1,4 +1,8 @@
-{
+{ 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:run": "cypress run"  
+  },
   "devDependencies": {
     "cypress": "^13.13.0"
   }
