@@ -6,18 +6,13 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'npm i'
+                sh 'npm install'
             }
         }
         stage('Running production backtests') {
             steps {
                 sh 'npm run prod:regress'
             }
-        }
-    }
-    post {
-        always {
-            junit 'results/*.xml'
         }
     }
 }
