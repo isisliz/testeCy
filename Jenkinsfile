@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Running production backtests') {
             steps {
-                bat 'npm run prod:regress'
+                bat 'npm run cypress:run'
             }
         }
     }
