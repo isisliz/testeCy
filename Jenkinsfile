@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
         stage('Running production backtests') {
             steps {
-                sh 'npm run prod:regress'
+                bat 'npm run prod:regress'
             }
         }
     }
